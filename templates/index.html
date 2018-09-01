@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Open Weather Map</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'main.css')}}">	
+</head>
+<body>
+<header>
+	<h1>Weather Map</h1>
+
+</header>
+	<br>
+	<br>
+	<form method="post" action="{{url_for('result')}}">
+		<center> <label>Enter the Location:  
+		  </label><input type="text" name="location">
+		  <input type="submit" name="Get Data">
+		</center>
+	</form>	
+</body>
+</html>
