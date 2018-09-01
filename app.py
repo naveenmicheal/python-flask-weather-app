@@ -6,7 +6,7 @@ from flask import render_template
 app = Flask(__name__)
 
 api_url = 'http://api.openweathermap.org/data/2.5/weather'
-apiid = '2cd32444742de701e98a669fa341d918'
+apiid = 'xxxxxxxxxxxxxxxxxx'
 
 @app.route('/')
 def index():
