@@ -1,16 +1,18 @@
 *{
-			padding: 0;
-			margin: 0;
-			font-family: sans-serif;
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
 }
-header{
-	height: 100px;
-	background-color: black;
-	}
-header h1{	
-	font-weight: bold;
-	color: white;
-	text-align: center;
-	position: relative;
-	top:20px;
+body{
+	background-color: #e0e0e0 ;
+}
+
+.row .col.s8{
+	margin-left:160px;
+	margin-top: 100px;
+}
+h4{
+	padding: 0;
+	margin:0 !important;
+	color: red;
 }

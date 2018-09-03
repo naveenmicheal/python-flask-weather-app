@@ -1,21 +1,31 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Results</title>
-	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'main.css')}}">
-</head>
+{% extends "layout.html"%}
+{%block content%}
 <body>
 <header>
-	<h1>Weather Map</h1>
+	<h1 class="light center">Weather Information - {{wloc}}</h1>
 </header>
-<div class="box">
-		<h1>{{msg}}</h1>
-		<p>Location:{{wloc}}</p>
-		<p>Temp: {{	wtemp}}</p>
-		<p>Discription:{{wdis}}</p>
-		<p>Presure : {{	prs}}</p>
-		<p>Windspeed:{{wspeed}}</p>
-		<p>Temp: {{	wtemp}}</p>
-</div>
-</body>
-</html>
+
+<div id="mycard" class="center-align">
+<div class="row center">
+    <div class="col s6 m11" >
+      <div class="card purple darken-2 card-panel hoverable darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Info</span>
+         <h1>{{msg}}</h1>
+		<h5>Location: {{wloc}}</h5>
+		<h5>Temp: {{wtemp}}</h5>
+		<h5>Discription:{{wdis}}</h5>
+		<h5>Presure : {{	prs}}<h5>
+		<h5>Windspeed:{{wspeed}}</h5>
+		<h5>Temp: {{	wtemp}}</h5>
+        </div>
+        <div class="card-action">
+          <a href="#">Where the data coming from</a>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>		
+
+{%endblock content%}

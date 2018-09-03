@@ -2,8 +2,25 @@
 <html>
 <head>
 	<title>Weather app</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+	 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'main.css')}}">	
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	  <nav>
+    <div class="nav-wrapper blue-grey darken-3">
+      <a href="#" class="brand-logo center hide-on-small-only">With OpenWeather API <small>Naveen Micheal</small></a>
+      <h4 id = 'mobileh4'class="show-on-small hide-on-med-and-up">Open Weather map</h4>
 
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="" href={{url_for('index')}}>Home</a></li>
+      </ul>
+    </div>
+  </nav>
+        
+{%block content%}
+   <!-- Our Dynamic Content -->
+{%endblock%}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 </body>
 </html>
